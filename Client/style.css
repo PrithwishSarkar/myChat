@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #128c7e;
+    height: 8.5vh;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    display: block;
+    /* margin: auto; */
+    padding: 0 10px;
+    height: 50px;
+    width: 50px;
+}
+
+.container{
+    padding: 1vh;
+    height: 81vh;
+    max-width: 100vw;
+    background-image: url("bg.jpeg");
+    background-size: cover;
+    overflow-y: auto;
+}
+.message{
+    background-color: #dcf8c6;
+    padding: 10px;
+    /* margin: 15px; */
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 1.3em;
+}
+.left{
+    float: left;
+    clear: both;
+}
+.right{
+    float: right;
+    clear: both;
+}
+.center{
+    float: none;
+    clear: both;
+    text-align: center;
+    font-size: 1.3em;
+}
+#send-container{
+    display: block;
+    text-align: center;
+    width: 100vw;
+    height: 8.5vh;
+    background-color: #128c7e;
+}
+#msginput{
+    margin-top: 13px;
+    width: 90vw;
+    border: 2px solid black;
+    border-radius: 8px;
+    height: 34px;
+    padding: 0 10px;
+}
+.btn{
+    cursor: pointer;
+    border :2px solid black;
+    border-radius: 8px;
+    height: 34px;
+    width: fit-content;
+    padding: 0 10px;
+}
+
+@media (max-width: 992px) {
+    .container{
+        background-image: url("bgvertical.jpeg");
+        height: 82.5vh;
+    }
+    #send-container{
+        height: 7vh;
+    }
+    #msginput{
+        width: 75vw;
+    }
+}
