@@ -1,4 +1,4 @@
-const socket = io("http://localhost:8000", {transports:["websocket"]});
+const socket = io("https://mychat-61ej.onrender.com", {transports:["websocket"]});
 
 const inputform = document.getElementById("send-container");
 const msg = document.getElementById("msginput");
@@ -18,6 +18,7 @@ function addmsg(name, text, pos){
     entry.classList.add('message');
     entry.classList.add(pos);
     if(pos === "left"){
+        tone.loop=false;
         tone.play();
     }
     msgarea.append(entry);
