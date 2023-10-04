@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+html, body {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+  }
 nav{
     background-color: #128c7e;
     height: 8.5vh;
@@ -26,11 +30,22 @@ nav{
 }
 .message{
     background-color: #dcf8c6;
-    padding: 10px;
-    /* margin: 15px; */
+    padding: 5px;
+    margin: 2px;
     border: 2px solid black;
     border-radius: 8px;
     font-size: 1.3em;
+    max-width: 50%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+
+  
+}
+span{
+    float: right;
+    opacity: 50%;
+    font-size: 0.9rem;
+   
 }
 .left{
     float: left;
@@ -60,6 +75,7 @@ nav{
     border-radius: 8px;
     height: 34px;
     padding: 0 10px;
+    
 }
 .btn{
     cursor: pointer;

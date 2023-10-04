@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <title>myChat - Let's Talk!</title>
     <script defer src="https://mychat-61ej.onrender.com/socket.io/socket.io.js"></script>
     <script defer src="client.js"></script>
@@ -24,8 +24,8 @@
     </div>
     <div class="send" id="send-container">
         <form action="#">
-            <input type="text" name="msginput" id="msginput">
-            <button class="btn" type="submit">Send</button>
+            <input type="text" name="msginput" id="msginput" autofocus>
+            <button class="btn" id="submit" type="submit">Send</button>
         </form>
     </div>
     
